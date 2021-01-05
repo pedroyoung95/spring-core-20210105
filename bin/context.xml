@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="car" class="spring_ex.Car">
+		<property name="tire" ref="tire"></property>
+	</bean> <!--Car 클래스에 tire라는 프로퍼티에 Tire객체를 주입(id로 주입대상 지칭)-->
+	<bean id="tire" class="spring_ex.Tire"></bean>		
+</beans>
