@@ -4,8 +4,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-	<bean id="car" class="spring_ex.Car">
+	<bean id="car" class="spring_ex1.Car">
 		<property name="tire" ref="tire"></property>
-	</bean> <!--Car 클래스에 tire라는 프로퍼티에 Tire객체를 주입(id로 주입대상 지칭)-->
-	<bean id="tire" class="spring_ex.Tire"></bean>		
+		<!--Car클래스에 tire라는 프로퍼티에 Tire객체를 주입(id로 주입대상 지칭)-->
+		<!--Car클래스에 setTire메소드가 있어야 주입이 이뤄짐-->
+	</bean> 
+	<bean id="tire" class="spring_ex1.Tire"></bean>		
 </beans>

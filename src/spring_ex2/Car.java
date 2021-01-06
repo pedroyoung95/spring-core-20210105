@@ -1,4 +1,4 @@
-package spring_ex;
+package spring_ex2;
 
 public class Car {
 	private Tire tire;
@@ -7,10 +7,8 @@ public class Car {
 		return tire;
 	}
 
-	public void setTire(Tire tire) {
-		this.tire = tire;
+	//public Car() {}
+	public Car(Tire t) {
+		this.tire = t;
 	}
-	
-	
-	
 }
